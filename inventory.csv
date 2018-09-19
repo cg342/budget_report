@@ -9,9 +9,9 @@ Year,Date,Name,Amount,Category,Tag,Description/Notes
 ,09/10,Parking,5.95,Transportation,Parking,
 ,09/11,Parking,4.05,Transportation,Parking,
 ,09/14,Parking,6.69,Transportation,Parking,
-,09/17,Parking,,,,
+,09/17,Parking,8.2,Transportation,Parking,
 ,09/10,Parking,11,Transportation,Parking,
-,,,,,,
+,09/18,Parking,8.1,Transportation,Parking,
 ,09/13,Yami,100.4,Grocery,Yami Food,
 ,,Taobao,,,,
 ,09/01,Gym,15,Gym,Gym,
@@ -27,11 +27,14 @@ Year,Date,Name,Amount,Category,Tag,Description/Notes
 ,09/06,HMart,28.98,Grocery,HMart Food,HMart Burlington
 ,09/06,Eat out,14.93,Food,Food,HMart Burlington
 ,09/05,CMart,43.08,Grocery,CMart Food,
-,09/03,Eat out,20.07,Food,Food,Poke Bento +- Eataly Icecream with Shuting
+,09/03,Eat out,20.07,Food,Food,Poke Bento/Eataly Icecream with Shuting
 ,09/03,Shopping,102.51,,,Shopping at Downtown
 ,09/02,HMart,112.04,Grocery,HMart Food,HMart Burlington
 ,09/16,Wegmans,42,Grocery,Wegmans Food,
 ,09/16,Wegmans,10,Household,Wegmans,Tea strainer
-,,reimburse,+AC0-28,,,boba
-,,kayak,25,,Outing,kayak+-lunch
-,,,14,,Amazon,mopping pad
+,,reimburse,-28,,,boba
+,,kayak,25,,Outing,kayak/lunch
+,09/18,mopping pad,14,,Amazon,
+,09/18,HM,91.2,Household,Household,
+,09/18,book,3.99,Books,eBay,
+,09/17,Dinner out,6.5,Food,Food,

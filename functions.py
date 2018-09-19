@@ -43,8 +43,8 @@ def read(inputpath):
   with open(inputpath, 'r') as f:
     entries = []
     next(f)
-    for lines in f:
-      newline = lines.rstrip()
+    for line in f:
+      newline = line.rstrip()
       row = newline.split(",")
       entries.append(Row(row[0],row[1],row[2], row[3], row[4], row[5], row[6]))
     
@@ -56,8 +56,11 @@ def read(inputpath):
     total = 0
 
     for entry in entries:
-      if entry.amount:
-        print float(entry.amount)
+      if entry.amount: # if amount is not empty
+        a = float(entry.amount)
+        if "-" in entry.amount:
+          a = float(entry.amount[1:])
+        total += a
 
       if entry.cat == "Grocery":
         groc += float(entry.amount)
@@ -68,14 +71,16 @@ def read(inputpath):
       if entry.cat == "Transportation":
         trans += float(entry.amount)
 
-      if entry.cat == "Transportation":
-        trans += float(entry.amount)
+      if re.search('parking', entry.tag, re.IGNORECASE):
+        parking += float(entry.amount)
 
       if re.search('food', entry.tag, re.IGNORECASE):
           food += float(entry.amount)    
-    print "grocery", groc
-    print "household", household
-    print "transportation", trans
-    
-    print "food", food
-    print "total", total
+    print "Grocery", groc
+    print "Household", household
+    print "Transportation", trans
+    print "Parking", parking
+    print "Food", food
+    print "Total", total
+
+
